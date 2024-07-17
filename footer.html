@@ -1,5 +1,16 @@
 
 
+<script> // Get the current year
+  let currentDate = new Date();
+  let currentYear = currentDate.getFullYear();
+
+  // Find the element with the id "currentYear"
+  let currentYearElement = document.getElementById("currentYear");
+
+  // Update the content of the element with the current year
+  currentYearElement.textContent = currentYear;
+</script>
+
 <div class="container">
         <div class="row">
             <div class="col-lg-4">
@@ -30,7 +41,7 @@
                         </li>
                     </ul>
                     <!-- End of .social-icons -->
-                    <p class="copywrite-txt">© 2021 <a href="#">Sweet Home Media</a>. A Patel Digitals Company.</p>
+                    <p class="copywrite-txt">© <span id="currentYear"></span> <a href="#">Sweet Home Media</a>. A Patel Digitals Company.</p>
                 </div>
             </div>
 <div class="col-lg-2"></div>
@@ -98,5 +109,3 @@
 </g>
 </svg>
 </div>
-
-
